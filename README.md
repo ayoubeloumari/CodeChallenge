@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Install Angular
 
-Run `npm install -g @angular/cli` to install the last version of Angular CLI
+Run `npm install -g @angular/cli` to install the last version of Angular CLI in your computer
 
 ## Install node modules
 Run `npm i npm-install-all` in the project to install all the node modules needed
