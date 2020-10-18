@@ -1,0 +1,19 @@
+<div class="container-fluid">
+<div class="card mb-3" style="max-width: 540px;" *ngFor="let repository of repositories | async |  paginate: { itemsPerPage: 10, currentPage: pageNumber }">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img [src]="repository.owner.avatar_url" class="card-img" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{repository.full_name}}</h5>
+          <p class="card-text">{{repository.description}}</p>
+          <p class="card-text"><small class="text-muted border">Stars: {{repository.stargazers_count}}</small>&nbsp;<small class="text-muted border">Issues: {{repository.open_issues_count}}</small>
+          &nbsp;<small>Submitted 30 days ago by {{repository.name}}</small> 
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <pagination-controls (pageChange)="pageNumber = $event"></pagination-controls>
+</div>
