@@ -7,9 +7,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `npm install -g @angular/cli` to install the last version of Angular CLI
 
+## Install node modules
+Run `npm i npm-install-all` in the project to install all the node modules needed
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+To list the last 30 days repositories navigate to `http://localhost:4200/repositories`.
 
 ## Code scaffolding
 
