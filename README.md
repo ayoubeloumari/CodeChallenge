@@ -2,13 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
+## Install all the necessary libraries
 
-## Install Angular
-
-Run `npm install -g @angular/cli` to install the last version of Angular CLI in your computer
-
-## Install node modules
-Run `npm i npm-install-all` in the project to install all the node modules needed
+Run `npm i npm-install-all` in the project file to install all Angular node modules and other libaries such as bootstrap, moment, ngx-pagination 
 
 ## Development server
 
