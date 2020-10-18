@@ -18,15 +18,7 @@ export class RepositoriesComponent implements OnInit {
   ngOnInit(): void {
   this.repositories=this.http.get<any>('https://api.github.com/search/repositories?q=created:>'+this.last30daysDate+'&sort=stars&order=desc&page='+this.pageNumber).pipe(map(res=>res.items))
  
-  console.log(moment().subtract(30, 'days').format("YYYY-MM-DD"))
   }
-  next(){
-    this.pageNumber+=1
-    this.repositories= this.http.get<any>('https://api.github.com/search/repositories?q=created:>'+this.last30daysDate+'&sort=stars&order=desc&page='+this.pageNumber).pipe(map(res=>res.items))
-  }
-  previous(){
-    this.pageNumber-=1
-    this.repositories=this.http.get<any>('https://api.github.com/search/repositories?q=created:>'+this.last30daysDate+'&sort=stars&order=desc&page='+this.pageNumber).pipe(map(res=>res.items))
-  }
+ 
 
 }
