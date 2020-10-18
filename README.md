@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
 
-## Development server
+## Install Angular
 
 Run `npm install -g @angular/cli` to install the last version of Angular CLI
 
